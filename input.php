@@ -1,3 +1,11 @@
+<?php
+session_start();
+if(!isset($_SESSION['admin'])) {
+	echo "<script>alert('Hei, kamu! Kamu belum login. Silahkan login terlebih dahulu.');</script>";
+	echo "<script>location='index.php';</script>";
+	exit();
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
