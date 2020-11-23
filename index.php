@@ -33,7 +33,7 @@ if(isset($_POST["login"])){
   if($akunyangcocok > 0){
     $akun = $ambil->fetch_assoc();
     $_SESSION["admin"] = $akun;
-    echo "<script>alert('Sukses Login!');</script>";
+    echo "<script>alert('Login Berhasil!');</script>";
     echo "<script> location='dataanggota.php';</script>";
   }
   else {
