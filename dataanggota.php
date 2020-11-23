@@ -2,7 +2,21 @@
 <html>
 <head>
 	<title>Data Anggota</title>
-	
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<style>
+body {background-image: url(latarbiru.png); background-size: 1380px;}
+table, th ,td{border: 1px solid black; text-align: center; height: 50px; width: 900px}
+td{border: 1px solid black;}
+
+ul {list-style-type: none;margin: 0;padding: 0;overflow: auto;background-color: #333; width: 100%;}
+li {float: left;}
+li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+li a:hover:not(.active) {background-color: white;}
+.active {background-color: #4CAF50;}
+</style>
 </head>
 <body>
 	<ul>
