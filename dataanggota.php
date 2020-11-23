@@ -35,6 +35,7 @@ li a:hover:not(.active) {background-color: white;}
   	<a class="navbar-brand" href="#">e-Library</a>
   	<li><a href="index.php">Home</a></li>
   	<li><a class="active" href="dataanggota.php">Data Anggota</a></li>
+	<li><a href="logout.php">Logout</a></li>
 	</ul>
 	<center><fieldset style="background-color: white;width: 500px; height: 70px; margin: 20px;"><h2 align="center" style="color:black;">DATA ANGGOTA PERPUSTAKAAN </h2></fieldset>
 	<center><p>____________________________________________________________</p>
