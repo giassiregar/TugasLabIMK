@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+include 'koneksi.php';
+
+if(!isset($_SESSION['admin'])) {
+	echo "<script>alert('Hei, kamu! Kamu belum login. Silahkan login terlebih dahulu.');</script>";
+	echo "<script>location='index.php';</script>";
+	exit();
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +51,6 @@ li a:hover:not(.active) {background-color: white;}
 			<th>Aksi</th>
 		</tr>
 		<?php
-		include 'koneksi.php';
 		$data = mysqli_query($koneksi,"SELECT * FROM mahasiswa");
 		while ($d = mysqli_fetch_array($data)) {
 	?>
