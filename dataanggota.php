@@ -32,7 +32,7 @@ li a:hover:not(.active) {background-color: white;}
 </head>
 <body>
 	<ul>
-  	<a class="navbar-brand" href="#">e-Library</a>
+	<li><a class="navbar-brand" href="#">e-Library</a></li>
   	<li><a href="index.php">Home</a></li>
   	<li><a class="active" href="dataanggota.php">Data Anggota</a></li>
 	<li><a href="logout.php">Logout</a></li>
