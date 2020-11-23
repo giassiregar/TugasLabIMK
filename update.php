@@ -1,6 +1,12 @@
 <?php
 include 'koneksi.php';
 
+if(!isset($_SESSION['admin'])) {
+	echo "<script>alert('Hei, kamu! Kamu belum login. Silahkan login terlebih dahulu.');</script>";
+	echo "<script>location='index.php';</script>";
+	exit();
+}
+
 $ambil = mysqli_query($koneksi, "SELECT * FROM mahasiswa WHERE nim='$_GET[nim]'");
 $pecah = mysqli_fetch_array($ambil);
 ?>
